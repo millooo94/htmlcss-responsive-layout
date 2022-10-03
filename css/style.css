@@ -48,6 +48,8 @@ html {
 
 
 
+
+
 @media screen and (min-width: 811px) {
     .nav-top ul {
         display: flex;
@@ -88,6 +90,9 @@ html {
         display: none;
     }
 
+}
+
+
 
 /* First Section */
 
@@ -95,47 +100,159 @@ html {
     margin-top: 5rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .first-section .small-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    border-radius: 20px;
     background-color: #d2691e;
-    flex: 1 1 calc(100% / 3 - 2rem);
+    flex: 1 1 calc(100% / 3 - 1rem);
 }
 
-/* .first-section .small-card1 {
-    flex: 1 1 calc(100% / 3 - 2rem);
-    background-color: blueviolet;
-} */
+
 
 .first-section .big-card {
-    display: flex;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 1em 5em 0 2em;
+    border-radius: 20px;
     background-color: yellowgreen;
-    flex: 1 1 calc(200% / 3 - 1rem);
 }
 
 .big-card-content {
-    width: 50%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+    align-self: flex-start;
 }
 
-.big-card-content h1 {
-    flex: 1 1 100%;
-}
 
 .big-card-content p {
-    flex: 1 1 100%;
-    
+    max-width: 350px;
+    line-height: 150%;
 }
 
-.big-card div {
-    width: 25%;
+.big-card .img-container  {
+    display: flex;
+    justify-content: center;
+
+
 }
 
 .big-card img {
-    display: block;
     width: 100% ;
+}
+
+
+
+.small-card i {
+    text-align: center;
+
+    font-size: 3rem;
+
+
+} 
+
+.small-card h1 {
+    text-align: center;
+
+
+}
+
+.small-card p {
+    text-align: center;
+    max-width: 280px;
+    line-height: 150%;
+
+}
+
+
+@media screen and (min-width: 811px) {
+    .first-section {
+        margin-top: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .first-section .small-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1rem;
+        border-radius: 20px;
+        background-color: #d2691e;
+        flex: 1 1 calc(100% / 3 - 1rem);
+    }
+    
+    
+    
+    .first-section .big-card {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em 5em 0 2em;
+        border-radius: 20px;
+        background-color: yellowgreen;
+        flex: 1 1 calc(200% / 3 - .5rem);
+    }
+    
+    .big-card-content {
+        width: 70%;
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        align-self: flex-start;
+    }
+    
+    
+    .big-card-content p {
+        flex: 1 1 50%;
+        max-width: 350px;
+        line-height: 150%;
+    }
+    
+    .big-card .img-container  {
+        width: 30%;
+        align-self: flex-end;
+    }
+    
+    .big-card img {
+        display: block;
+        width: 100% ;
+    }
+    
+    .big-card .btn {
+    }
+    
+    .small-card i {
+        text-align: center;
+    
+        font-size: 3rem;
+    
+    
+    } 
+    
+    .small-card h1 {
+        text-align: center;
+    
+    
+    }
+    
+    .small-card p {
+        text-align: center;
+        max-width: 280px;
+        line-height: 150%;
+    
+    }
+    
 }
 
 
