@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* General Styles */
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.btn {
+    all: unset;
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 10em;
+}
+
+
+/* Navbar */
+.nav-top {
+    background-color: #0084FD;
+    height: 4.7rem;
+}
+
+.nav-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-top ul {
+    display: none;
+}
+
+.nav-top .hamburger {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+
+@media screen and (min-width: 811px) {
+    .nav-top ul {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        list-style: none;
+    }
+    
+    .nav-top li {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .nav-top .nav-link {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 1rem;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav-top .nav-link:hover {
+        background-color: aquamarine;
+    }
+    
+    .nav-top .btn {
+        background-color: white;
+        padding: .5rem
+    }
+    
+    .nav-top .btn:hover {
+        background-color: lightgrey;
+    }
+
+    .nav-top .hamburger {
+        display: none;
+    }
+
+
+/* First Section */
+
+.first-section {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.first-section .small-card {
+    background-color: #d2691e;
+    flex: 1 1 calc(100% / 3 - 2rem);
+}
+
+/* .first-section .small-card1 {
+    flex: 1 1 calc(100% / 3 - 2rem);
+    background-color: blueviolet;
+} */
+
+.first-section .big-card {
+    display: flex;
+    background-color: yellowgreen;
+    flex: 1 1 calc(200% / 3 - 1rem);
+}
+
+.big-card-content {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.big-card-content h1 {
+    flex: 1 1 100%;
+}
+
+.big-card-content p {
+    flex: 1 1 100%;
+    
+}
+
+.big-card div {
+    width: 25%;
+}
+
+.big-card img {
+    display: block;
+    width: 100% ;
+}
+
+
+
+
+
+
+
