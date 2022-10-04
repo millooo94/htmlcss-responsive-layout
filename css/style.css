@@ -174,7 +174,7 @@ html {
     margin-bottom: 1.4rem;
 }
 
-.left-content i {
+.first-section .left-content i {
     margin-right: .3em;
 }
 
@@ -276,7 +276,7 @@ html {
 }
 
 
-.left-content h2 {
+.second-section .left-content h2 {
     color: white;
     margin-bottom: 2.5rem;
 }
@@ -428,10 +428,72 @@ html {
 
     .facecard-content {
         text-align: start;
-        margin-left: 2.5rem;
-        
+        margin-left: 2.5rem; 
     }
 }
+
+
+/* Fourth Section */
+
+.fourth-section {
+    background-color: #9792e4;
+}
+
+.container .title-big {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
+    color: white;
+}
+
+.fourth-section .benefit-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.fourth-section .benefit-card {
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: white;
+
+
+}
+
+.benefit-card .number {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #9792e4;
+}
+
+.benefit-card .class {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #9792e4;
+}
+
+.benefit-card .btn {
+    color: white;
+    background-color: #9792e4;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .75em 2.8em;
+}
+
+@media screen and (min-width: 811px) {
+    .fourth-section .benefit-card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .benefit-card-container .benefit-card {
+        flex: 0 1 calc(100% / 3 - 1rem)
+    }
+}
+
+
+
+
 
 
 
