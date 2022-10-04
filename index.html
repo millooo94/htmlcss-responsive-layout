@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title -->
-    <title>Responsive Layout</title>
-    <!-- Style -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Title -->
+        <title>Responsive Layout</title>
+        <!-- Style -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav class="nav-top">
             <div class="container">
                 <a href="#!"><img src="img/logo.png" alt="Logo"></a>
+                <div class="hamburger">
+                    <i class="fa fa-bars"></i>
+                </div>
                 <ul>
                     <li><a class="nav-link" href="#!">Planning</a></li>
                     <li><a class="nav-link" href="#!">Testimonials</a></li>
@@ -27,48 +30,148 @@
                     <li><a class="nav-link" href="#!">About Us</a></li>
                     <li><a class="btn" href="#!">Get Started</a></li>
                 </ul>
-                <div class="hamburger">
-                    <i class="fa fa-bars"></i>
-                </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section>
-            <div class="first-section container">
-                <div class="big-card">
-                    <div class="big-card-content">
-                        <h1>Get a demo application</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis.</p>
-                        <div class="btn">App store</div>
+        <section class="first-section">
+            <div class="container">
 
+                <div class="card card-big">
+                    <div class="left-content">
+                        <h2 class="title-small">Get a demo application</h2>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis.
+                        </p>
+                        <a class="btn" href="">
+                            <i class="fa-brands fa-apple"></i>
+                            App Store
+                        </a>
                     </div>
-                    <div><img src="img/phone.png" alt="Phone"></div>
+                    <img src="img/phone.png" alt="">
                 </div>
-                <div class="small-card">
+                
+
+                <div class="card card-small">
                     <i class="fa-solid fa-file-code"></i>
-                    <h1>Get a demo application</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis.</p>
+                    <h2 class="title-small">Clean Code</h2>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis.
+                    </p>
                 </div>
-                <div class="small-card">
-                    <i class="fa-solid fa-file-code"></i>
-                    <h1>Get a demo application</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis.</p>
+
+                <div class="card card-small">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <h2 class="title-small">Web Design</h2>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis.
+                    </p>
                 </div>
-                <div class="small-card">
-                    <i class="fa-solid fa-file-code"></i>
-                    <h1>Get a demo application</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis.</p>
+
+                <div class="card card-small">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2 class="title-small">Development</h2>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis.
+                    </p>
                 </div>
-                <div class="small-card">
-                    <i class="fa-solid fa-file-code"></i>
-                    <h1>Get a demo application</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis.</p>
+
+                <div class="card card-small">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h2 class="title-small">Branding</h2>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis.
+                    </p>
                 </div>
             </div>
         </section>
+        
+        <section class="second-section">
+            <div class="container">
+                <img src="img/planning1.png" alt="">
+                <div class="left-content">
+                    <h2 class="title-medium">Strategic Planning</h2>
+                    <p class="text">Egestas dui id ornare arcu odio. In tellus integer feugiat scelerisque varius morbi enim nunc. Habitasse platea dictumst quisque sagittis. Interdum velit euismod in pellentrsque massa placerat duis. Quis viverra nibh cras pulvinar mattis</p>
+                </div>
+                <div class="right-content">
+                    <img src="img/planning2.png" alt="">
+                        <h2 class="title-small">App Development</h2>
+                        <p class="text">Develop on on-demand app for your delivery business to reach your targeted customers without any interrumption.</p>
+                    <div class="circle">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                </div>
 
+            </div>
+        </section>
+
+
+        <!-- <section class="third-section">
+            <div class="container">
+                <span>TESTIMONIALS</span>
+                <h2>We are committed expert partners</h2>
+                <p>We place value on strong relationships and have seen the benefitthey bring to ourbusiness. Customer feedback is vital in helping us to getit right.</p>
+                <div class="third section card">
+                    <div class="circle-pic-container"><img src="img/testimonial1.jpg" alt=""></div>
+                    <div class="third-section-content">
+                        <cite>Vitae suscipit tellus mauris a diam maecenas sed unim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin</cite>
+                        <span>NAT REYNOLDS</span>
+                    </div>
+                </div>
+            </div>
+
+        </section> -->
+
+        <section class="third-section">
+            <div class="container">
+                <div class="initial-block">
+                    <span>TESTIMONIALS</span>
+                    <h2 class="title-big">We are committed expert partners</h2>
+                    <p class="text">We place value on strong relationships and have seen the benefitthey bring to ourbusiness. Customer feedback is vital in helping us to get it right.</p>
+                </div>
+                <div class="facecard-container">
+                    <div class="facecard">
+                        <div class="face-circle">
+                            <img src="img/testimonial1.jpg" alt="">
+                        </div>
+                        <div class="text facecard-content">
+                            <p>
+                                <i class="fa-solid fa-quote-left"></i>
+                                Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin.
+                                <i class="fa-solid fa-quote-right"></i>
+                                <div class="name">NAT REYNOLDS</div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="facecard-container">
+                        <div class="facecard">
+                            <div class="face-circle">
+                                <img src="img/testimonial1.jpg" alt="">
+                            </div>
+                            <div class="text facecard-content">
+                                <p>
+                                    <i class="fa-solid fa-quote-left"></i>
+                                    Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin.
+                                    <i class="fa-solid fa-quote-right"></i>
+                                    <div class="name">NAT REYNOLDS</div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="facecard-container">
+                        <div class="facecard">
+                            <div class="face-circle">
+                                <img src="img/testimonial1.jpg" alt="">
+                            </div>
+                            <div class="text facecard-content">
+                                <p>
+                                    <i class="fa-solid fa-quote-left"></i>
+                                    Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin.
+                                    <i class="fa-solid fa-quote-right"></i>
+                                    <div class="name">NAT REYNOLDS</div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     
 </body>
