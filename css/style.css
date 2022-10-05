@@ -261,8 +261,12 @@ html {
     flex-wrap: wrap;
 }
 
-.second-section img {
+.second-section .img-left-container {
     flex: 0 0 100%;
+}
+
+.img-left-container img {
+    width: 100%;
 }
 
 .second-section .left-content {
@@ -297,9 +301,14 @@ html {
     background-color: white;
 }
 
-.second-section .right-content img {
-    flex: 0 1 100%;
+.second-section .img-left-container {
+    flex: 0 0 100%;
 }
+
+.img-left-container img {
+    width: 100%;
+}
+
 
 .second-section .right-content h2 {
     margin-top: 1rem;
@@ -325,36 +334,52 @@ html {
 }
 
 @media screen and (min-width: 811px) {
-    .second-section img {
-        width: 100px;
+
+   }
+
+    .second-section .img-left-container {
+        flex-basis: 0;
+        width: 60px;
+
     }
 
-    /* .second-section .right-content > img {
-        width: 200px;
-    } */
+    
 
-}
+    .second-section .left-content {
+        flex: 0 1 50%;
+    }
+
+    .second-section .right-content {
+        flex: 0 1 50%;
+
+    }
+
 
 
 /* Third Section */
 
 .third-section {
-    padding: 3rem 1rem 5rem 1rem;
+    padding: 3rem 1rem 4.5rem 1rem;
 }
 
 .third-section .container {
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
 }
 
 .container .initial-block {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     color: black;
 }
 
+.initial-block div {
+    text-align: center;
+    font-size: .8rem;
+}
 
 .initial-block h2 {
     text-align: center;
@@ -365,7 +390,7 @@ html {
 
 .initial-block p {
     text-align: center;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
     font-weight: 400;
 }
 
@@ -420,16 +445,31 @@ html {
 }
 
 @media screen and (min-width: 811px) {
-    .third-section .facecard {
+     .third-section .facecard {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    } 
 
     .facecard-content {
         text-align: start;
         margin-left: 2.5rem; 
-    }
+    } 
+}
+
+@media screen and (min-width: 376px) and (max-width: 810px) {
+    .third-section .facecard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .facecard-content {
+        text-align: start;
+        margin-left: 2.5rem; 
+    } 
+
+
 }
 
 
@@ -437,11 +477,12 @@ html {
 
 .fourth-section {
     background-color: #9792e4;
-}
-
-.container .title-big {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+}
+
+.fourth-section .title-big {
+    margin-bottom: 2.5rem;
     text-align: center;
     color: white;
 }
@@ -456,8 +497,6 @@ html {
     border-radius: 1rem;
     padding: 1rem;
     background-color: white;
-
-
 }
 
 .benefit-card .number {
@@ -481,19 +520,184 @@ html {
 }
 
 @media screen and (min-width: 811px) {
+/* 
     .fourth-section .benefit-card-container {
         flex-direction: row;
-        flex-wrap: wrap;
     }
+
 
     .benefit-card-container .benefit-card {
         flex: 0 1 calc(100% / 3 - 1rem)
-    }
+    } */
+}
+
+
+/* Fifth section */
+
+.fifth-section {
+    padding: 3.5rem 1rem 2rem 1rem;
+}
+
+.fifth-section h2 {
+    color: #9792e4;
+}
+
+.fifth-section p {
+    color: black;
+}
+
+.fifth-section-left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.fifth-section-left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.fifth-section-right-content img {
+    position: relative;
+}
+
+.fifth-section-right-content > i {
+    position: absolute;
+    left: 140px;
+    z-index: 1;
+    font-size: 3.5rem;
+    color: #9792e4;
 }
 
 
 
+.fifth-section img {
+    width: 150px;
+}
 
+.fifth-section-right-content .quote {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #9792e4;
+}
+
+.fifth-section-right-content .btn {
+    padding: .75em 2.8em;
+    background-color: #9792e4;
+    color: white;
+}
+
+@media screen and (min-width: 811px) {
+    .container {
+        display: flex;
+        gap: 4em;
+    }
+
+}
+
+@media screen and (min-width: 376px) and (max-width: 810px) {
+    .container {
+        display: flex;
+        gap: 4em;
+    }
+
+}
+
+/* Sixth Section */
+
+.sixth-section {
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    background-color: #9792e4;
+}
+
+
+.sixth-section .start {
+    text-align: center;
+    color: white;
+}
+
+.sixth-section h2 {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+.sixth-section .free {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fdc15f;
+}
+
+.sixth-section p {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.sixth-section .btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: .75em 1em;;
+    background-color: white;
+    color: #9792e4;
+}
+
+.sixth-section-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: .5rem;
+}
+
+.sixth-section-footer i {
+    font-size: .5rem;
+}
+
+.sixth-section-footer span {
+    margin-right: .2rem;
+}
+
+.sixth-section-footer a {
+    color: white;
+}
+
+@media screen and (min-width: 811px) {
+    /* .sixth-section .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } */
+}
+
+/* Eighth Section */
+
+.eighth-section {
+    padding: 2.2rem 1rem 2.2rem 1rem;
+    background-color: #333333;
+}
+
+
+.eighth-section p {
+    text-align: center;
+    color: white;
+}
+
+.eighth-section .first-paragraph {
+    margin-bottom: 3rem;
+}
+
+.eighth-section a {
+    color: #9792e4;
+}
 
 
 
